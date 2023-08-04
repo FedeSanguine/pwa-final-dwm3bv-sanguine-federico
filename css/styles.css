@@ -1,0 +1,310 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:white;
+}
+
+::selection {
+    background-color:black;
+}
+
+.strong-sin-estilos {
+    text-decoration: none;
+}
+
+
+
+.bg-lightgray {
+    background-color: lightgray;
+}
+
+.bg-light-violet {
+    background-color: #f1e1ff;
+}
+
+.bg-green {
+    background-color: #64ffda;
+}
+
+.border-dark-violet {
+    border: #1f0942 solid 2px;
+}
+
+
+#instalacion div:first-of-type {
+    margin: auto;
+}
+
+#instalacion {
+    background: url(../img/instalar-app-banner.jpg) no-repeat center center;
+    background-color: black;
+    width: 100vw;
+    height: 6.25em;
+    display: none;
+}
+
+#botonInstalar {
+    border: white solid 1px;
+    background-color: black;
+    color: white;
+    border-radius: 0.5em;
+    width: 10em;
+    padding: 0.3em 0.4em;
+    font-size: 1.1rem;
+    box-shadow: 1px 2px 1px #8d8d8d;
+}
+
+#botonInstalar:hover {
+    background-color: #12ce86;
+    box-shadow: 1px 2px 1px #0c8d5c;
+    transition: 200ms ease-in;
+}
+
+#instalacion p {
+    font-size: 1.1rem;
+    color: white;
+    margin-bottom: 0em;
+    padding: 0.5em;
+}
+
+#instalacion span {
+    color: #12ce86;
+    font-weight: 600;
+}
+
+
+.text-dark-violet {
+    color: #1f0942;
+}
+
+.shadow-sm-personalizada {
+
+    box-shadow: 0 .125rem .25rem red;
+}
+
+#botonDescarga {
+    background-color: #64ffda;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075)!important;
+    font-weight: 600;
+}
+
+
+.card-container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  /* Alinea los botones al final del card-body */
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+  
+  /* Estilos para las tarjetas */
+  .card {
+    height: 100%;
+
+  }
+
+  .card img {
+    max-height: 400px;
+  }
+
+
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 800;
+    color: #1f0942;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container-formulario {
+    justify-content: center;
+
+}
+
+.form-control:focus {
+    color: #212529;
+    background-color: #fff;
+    border-color: #1f0942;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgba(122, 70, 207, 0.25);
+}
+
+.form-select:focus {
+    border-color: #1f0942;
+    outline: 0;
+    box-shadow: 0 0 0 0.25rem rgb(122, 70, 207, 0.25);
+}
+
+option:hover {
+    background-color: #f1e1ff !important;
+}
+
+.form-check-input:checked {
+    background-color: #64ffda;
+    border-color: #64ffda;
+
+}
+
+.iconos-redes svg:hover {
+    fill: #64ffda;
+}
+
+
+
+
+
+
+textarea {
+    resize: none;
+}
+
+.modal {
+    height: 90%;
+}
+
+.modal-body {
+    height: 70%;
+    overflow-y: scroll;
+}
+
+#tarjetaDatos{
+    display: none;
+}
+
+#divbotonDescarga{
+    display: none;
+}
+footer {
+    background-color: black;
+    text-align: center;
+    color: white;
+}
+
+footer p {
+    background-color: #0c8d5c;
+}
+
+footer h2 {
+    color: white;
+    background-color: black;
+    margin-bottom: 0px;
+    font-size: 1.2rem;
+    color: white;
+}
+
+footer ul li {
+    list-style: none;
+}
+
+footer ul {
+    padding-left: 0rem;
+}
+
+/*Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) {
+        /* INSTALAR APP */
+        #instalacion {
+            margin-top: 1em;
+            height: fit-content;
+            padding: 0.4em;
+        }
+    
+        #botonInstalar {
+            border: none;
+            background-color: black;
+            color: white;
+            border-radius: 0.5em;
+            width: 10em;
+            padding: 0.3em 0.4em;
+            margin-right: 0.5em;
+            font-size: 1.1rem;
+            box-shadow: 1px 2px 1px #0e153f;
+        }
+    
+        #botonInstalar:hover {
+            background-color: #12ce86;
+            box-shadow: 1px 2px 1px #0c8d5c;
+            transition: 200ms ease-in;
+        }
+    
+        #instalacion p {
+            font-size: 0.95rem;
+            color: #818181;
+            margin-bottom: 0em;
+            padding: 0.6em;
+        }
+    
+        #instalacion span {
+            color: #12ce86;
+            font-weight: 600;
+        }
+}
+
+/*Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) {
+    #logo {
+        width: 200px;
+        height: 57px;
+    }
+
+}
+
+
+/*X-Large devices (large desktops, 1200px and up)*/
+@media (min-width: 1200px) {
+
+    #container-formulario {
+        justify-content: center;
+
+    }
+
+    #seccion-suscripcion {
+        background-image: url("../img/background-form-lg.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
+
+/*XX-Large devices (larger desktops, 1400px and up)*/
+@media (min-width: 1400px) {
+
+    #seccion-suscripcion {
+        background-image: url("../img/background-form.jpg");
+        background-repeat: no-repeat;
+        background-position: right;
+    }
+
+    #container-formulario {
+        justify-content: start;
+
+    }
+
+
+    #carouselExampleCaptions {
+        max-width: 1920px;
+        
+    }
+}
